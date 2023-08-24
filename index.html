@@ -3,38 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat-Photo-App</title>
+    <link rel="stylesheet" href="styles.css"
+    <title>Cat Photo App</title>
 </head>
 <body>
     <main>
-        <h1>CatPhotoApp</h1>
-        <section>
+        <h1 class="heading">Cat Photo App</h1>
+        <section class="section1">
             <h2>Cat Photos</h2>
             <p>See more cat photos in our gallery.</p>
-            <img src="images/relaxing-cat.jpg" alt="A cute orange cat lying on its back">
+            <img class ="main-photo" src="images/relaxing-cat.jpg" alt="A cute orange cat lying on its back">
         </section>
         <section>
             <h2>Cat Lists</h2>
-            <h3>Things cats love:</h3>
-            <ul>
-                <li>cat nip</li>
-                <li>laser points</li>
-                <li>lasagna</li>
-            </ul>
-            <figure>
-            <img src="images/lasagna.jpg" alt="A slice of lasagna">
-            <figcaption>Cats <em>love</em> lasagna.</figcaption>
-            </figure>
-            <h3>Top 3 things cats hate:</h3>
-            <ol>
-                <li>flea treatment</li>
-                <li>thunder</li>
-                <li>other cats</li>
-            </ol>
-            <figure>
-            <img src="images/cats.jpg" alt="Five cats on a field">
-            <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
-            </figure>    
+            <div class="cat-lists">
+                <div class="list1">
+                    <h3>Things cats love:</h3>
+                    <ul>
+                        <li>cat nip</li>
+                        <li>laser points</li>
+                        <li>lasagna</li>
+                    </ul>
+                    <figure>
+                    <img src="images/lasagna.jpg" alt="A slice of lasagna">
+                    <figcaption>Cats <em>love</em> lasagna.</figcaption>
+                    </figure>
+                </div>
+                <div class="list2">
+                    <h3>Top 3 things cats hate:</h3>
+                    <ol>
+                        <li>flea treatment</li>
+                        <li>thunder</li>
+                        <li>other cats</li>
+                    </ol>
+                    <figure>
+                    <img src="images/cats.jpg" alt="Five cats on a field">
+                    <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+                    </figure>
+                </div>  
+            </div>  
         </section>
         <section>
             <h2>Cat Form</h2>
@@ -50,7 +57,7 @@
                 <input id="lazy" type="checkbox" name="personality" value="lazy"><label for="lazy">Lazy</label>
                 <input id="energetic" type="checkbox" name="personality" value="energetic"><label for="energetic">Energetic</label>
             </fieldset>
-            <input type="text" name="cat-photo-url" placeholder="cat photo url" required>
+            <input id="cat-photo-url" type="text" name="cat-photo-url" placeholder="cat photo url" required>
             <button type="submit">Submit</button>
             </form>
         </section>
